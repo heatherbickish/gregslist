@@ -44,12 +44,44 @@
 
     <!-- SECTION if you are adding houses, add them here -->
 
+    <form class="row g-4 bg-white p-4 rounded shadow-sm my-3">
+      <div>
+        <h2>List Your House</h2>
+      </div>
+      <div class="col-md-4">
+        <label for="house-year">Year</label>
+        <input required id="house-year" name="year" type="number" min="1930" max="2024" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-bedrooms">Bedrooms</label>
+        <input required id="house-bedrooms" name="bedrooms" type="number" min="0" max="10" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-bathrooms">Bathrooms</label>
+        <input required id="house-bathrooms" name="bathrooms" type="number" min="0" max="10" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-sqft">Sqft</label>
+        <input required id="house-sqft" name="sqft" type="number" min="10" max="200000" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-price">Price</label>
+        <input required id="house-price" name="year" type="range" min="20000" max="2000000" step="60000"
+          class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-description">Description</label>
+        <input required id="house-description" name="description" type="text" minlength="2" maxlength="25"
+          class="form-control">
+      </div>
+      <div class="text-end">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+    <!-- SECTION house cards -->
+    <section id="house-listings" class="row">
 
-
-
-
-
-
+    </section>
 
 
     <!-- --- -->

@@ -44,7 +44,7 @@
 
     <!-- SECTION if you are adding houses, add them here -->
 
-    <form class="row g-4 bg-white p-4 rounded shadow-sm my-3">
+    <form onsubmit="app.HouseController.createHouseListing()" class="row g-4 bg-white p-4 rounded shadow-sm my-3">
       <div>
         <h2>List Your House</h2>
       </div>
@@ -66,13 +66,17 @@
       </div>
       <div class="col-md-4">
         <label for="house-price">Price</label>
-        <input required id="house-price" name="year" type="range" min="20000" max="2000000" step="60000"
+        <input required id="house-price" name="price" type="range" min="20000" max="2000000" step="60000"
           class="form-control">
       </div>
       <div class="col-md-4">
         <label for="house-description">Description</label>
-        <input required id="house-description" name="description" type="text" minlength="2" maxlength="25"
+        <input required id="house-description" name="description" type="text" minlength="2" maxlength="35"
           class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-imgUrl">Picture</label>
+        <input required id="house-imgUrl" name="imgUrl" type="url" class="form-control">
       </div>
       <div class="text-end">
         <button class="btn btn-primary" type="submit">Submit</button>

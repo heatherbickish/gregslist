@@ -38,7 +38,7 @@ export class CarsController {
 
   deleteCarListing(carId) {
     console.log('🔥deleting!', carId);
-    const confirmed = confirm("Are you sure you want to delete this? this action cannot be REVERED. It will be gone forevah!")
+    const confirmed = confirm("Are you sure you want to delete this? this action cannot be REVERSED. It will be gone forevah!")
     if (!confirmed) return
     const areYourSureSure = confirm("Are you absolutely Sure?")
     if (!areYourSureSure) return

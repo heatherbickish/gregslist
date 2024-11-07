@@ -4,7 +4,7 @@ export class House {
   constructor(data) {
     this.id = data.id || generateId()
     this.year = data.year
-    this.name = data.name
+    this.type = data.type
     this.bedrooms = data.bedrooms
     this.bathrooms = data.bathrooms
     this.sqft = data.sqft
@@ -25,6 +25,10 @@ export class House {
             <p class="text-center fw-bold fs-3">
              $ ${this.price}
             </p>
+            <hr>
+            <p class="fw-bold">
+            ${this.type}
+            </p>
             <p>
             sqft:  ${this.sqft}
             </p>
@@ -36,7 +40,7 @@ export class House {
             ${this.description}
             </p>
             <div class="text-end">
-            <button onclick="app.HouseController.deleteHouseListing('${this.id}')" class="mdi mdi-trash-can text-danger fs-4 rounded-3" title="delete"></button>
+            <button onclick="app.HouseController.deleteHouseListing('${this.id}')" class="mdi mdi-trash-can text-danger fs-4 rounded-3" title="delete ${this.type} $${this.price}"></button>
             </div>
           </div>
         </div>

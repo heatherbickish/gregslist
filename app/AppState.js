@@ -8,6 +8,7 @@ class ObservableAppState extends EventEmitter {
   houses = [
 
     new House({
+      type: 'Snug Closet',
       year: '2023',
       bedrooms: 1,
       bathrooms: 0,
@@ -18,6 +19,7 @@ class ObservableAppState extends EventEmitter {
     }),
 
     new House({
+      type: 'Single Famiy',
       year: '2000',
       bedrooms: 2,
       bathrooms: 1,
@@ -28,6 +30,7 @@ class ObservableAppState extends EventEmitter {
     }),
 
     new House({
+      type: 'Fixer Upper',
       year: '1998',
       bedrooms: 1,
       bathrooms: .5,

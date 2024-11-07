@@ -19,6 +19,7 @@ export class HouseController {
     const formlyData = {
       price: formlyElm.price.value,
       year: formlyElm.year.value,
+      type: formlyElm.type.value,
       sqft: formlyElm.sqft.value,
       bedrooms: formlyElm.bedrooms.value,
       bathrooms: formlyElm.bathrooms.value,
